@@ -1,26 +1,26 @@
 [
     {
         "id": 1,
+        "imgSrc": "SpicySeasonFood",
         "title": "Hello guys",
-        "count": 0,
         "price": 681
     },
     {
         "id": 2,
+        "imgSrc": "SaltedPasta",
         "title": "Just text",
-        "count": 0,
         "price": 681
     },
     {
         "id": 3,
+        "imgSrc": "BeefDampling",
         "title": "Example",
-        "count": 0,
         "price": 681
     },
     {
         "id": 4,
+        "imgSrc": "HealthyNoddles",
         "title": "Matrix",
-        "count": 0,
         "price": 681
     }
 ]

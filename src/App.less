@@ -8,6 +8,7 @@ main{
     align-items: center;
     flex-direction: column;
     padding-top: 70px;
+    background: rgb(37, 40, 54);
     .container{
         width: 1000px;
         border-radius: 10px;
@@ -55,7 +56,8 @@ main{
 .productBlock{
     width: 1100px;
     padding: 20px 50px;
-    background: #fff;
+    border-radius: 16px;
+
     .allProducts{
         width: 100%;
         .flex_between;
@@ -64,10 +66,28 @@ main{
             width: 200px;
             height: 100px;
             padding: 10px;
-            border: 1px solid #000;
+            border-radius: 16px;
+            background: rgb(31, 29, 43);
+            text-align: center;
+            h1,p{
+                color: rgb(255, 255, 255);
+                font-size: 14px;
+                font-weight: 500;
+            }
+            h1{
+                font-size: 25px;
+            }
+            
         }
     }
 }
+
+.searchBlock{
+    position: absolute;
+    top: 30px;
+    right: 260px;
+}
+
 
 input{
     width: 300px;

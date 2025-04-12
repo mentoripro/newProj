@@ -1,5 +1,9 @@
 import { useState, useEffect, use } from 'react'
 import './App.less'
+import SpicySeasonFood from './assets/SpicySeasonFood.svg'
+import BeefDampling from './assets/BeefDampling.svg'
+import HealthyNoddles from './assets/HealthyNoddles.svg'
+import SaltedPasta from './assets/SaltedPasta.svg'
 
 function App() {
   const [txt, setTxt] = useState('')
@@ -31,7 +35,8 @@ function App() {
   const addTocard = (el) =>{
     const checkCardtovalue = card.some((item)=> item.id === el.id)
     if(!checkCardtovalue){
-      setcard((prevcard) => [...prevcard, el])
+      setcard((prevcard) => [...prevcard, el])  
+      // {el, count: 1}
     }
   }
 
@@ -43,7 +48,7 @@ function App() {
     <main>
         <div className='searchBlock'>
             <input type="text" value={txt} onChange={hello}/>
-            <ul>
+            {/* <ul>
               {filteredProducts.map((el)=>(
                 <li key={el.id}>
                   <h3>{el.title}</h3>
@@ -51,7 +56,7 @@ function App() {
                   <button onClick={()=> addTocard(el)}>Купить</button>
                 </li>
               ))}
-            </ul>
+            </ul> */}
       </div>
 
       <div className='productBlock'>
@@ -59,6 +64,7 @@ function App() {
           {
             products.map((el)=>(
               <nav key={el.id}>
+                <img src={el.imgSrc} alt="" />
                 <h1>{el.title}</h1>
                 <p>Price: ${el.price}</p>
               </nav>
